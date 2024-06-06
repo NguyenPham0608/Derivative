@@ -1,0 +1,28 @@
+#canvas1{
+    border: 3px solid rgb(215, 215, 215);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1600px;
+    height: 845px;
+    background-size: cover;
+    background-color: rgb(246, 252, 255);
+}
+
+.button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rangeslider{
+width: 50%;
+}
+.myslider {
+    background: #FCF3CF  ;
+    width: 50%;
+    height: 20px;
+    opacity: 2;
+   }
