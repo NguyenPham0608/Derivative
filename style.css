@@ -1,11 +1,11 @@
 #canvas1{
     border: 3px solid rgb(215, 215, 215);
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 1600px;
-    height: 595px;
+    height: 795px;
     background-size: cover;
     background-color: rgb(246, 252, 255);
 }
