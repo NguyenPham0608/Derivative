@@ -1,9 +1,9 @@
 #canvas1{
     border: 3px solid rgb(215, 215, 215);
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%,-30%);
+    transform: translate(-50%,-50%);
     width: 1600px;
     height: 795px;
     background-size: cover;
