@@ -11,7 +11,7 @@ output.innerHTML = rangeslider.value;
 let canvasPosition = canvas.getBoundingClientRect()
 
 canvas.width=1600
-canvas.height=825
+canvas.height=845
 
 let pause=false
 
@@ -360,6 +360,11 @@ button.addEventListener('click',function(e){
         auto=false
     }else{
         auto=true
+    }
+    if(mouseX>canvas.width-200){
+        mode++
+        mode=1+(mode%3)
+        swooshAudio.play()
     }
 })
 
