@@ -10,6 +10,9 @@ output.innerHTML = rangeslider.value;
 
 let canvasPosition = canvas.getBoundingClientRect()
 
+canvas.width=1600
+canvas.height=845
+
 let pause=false
 
 let swooshAudio= new Audio()
@@ -71,6 +74,7 @@ rangeslider.oninput = function() {
   } 
 
 function gameLoop(){
+    canvasPosition = canvas.getBoundingClientRect()
     ctx.clearRect(0,0,canvas.width,canvas.height)
     equation.splice(0, equation.length)
     drawAxis()
