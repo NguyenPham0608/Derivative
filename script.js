@@ -11,7 +11,7 @@ output.innerHTML = rangeslider.value;
 let canvasPosition = canvas.getBoundingClientRect()
 
 canvas.width=1600
-canvas.height=845
+canvas.height=835
 
 let pause=false
 
