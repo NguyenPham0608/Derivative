@@ -361,6 +361,10 @@ button.addEventListener('click',function(e){
     }else{
         auto=true
     }
+
+})
+
+window.addEventListener('click',function(){
     if(mouseX>canvas.width-200){
         mode++
         mode=1+(mode%3)
