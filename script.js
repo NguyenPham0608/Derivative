@@ -11,7 +11,7 @@ output.innerHTML = rangeslider.value;
 let canvasPosition = canvas.getBoundingClientRect()
 
 canvas.width=1600
-canvas.height=835
+canvas.height=845
 
 let pause=false
 
@@ -336,8 +336,10 @@ function toFixed(x) {
   }
 
 window.addEventListener('mousemove',function(e){
-    mouseX=e.x-canvasPosition.left
-    mouseY=e.y-canvasPosition.top
+    // mouseX=e.x-canvasPosition.left
+    // mouseY=e.y-canvasPosition.top
+    mouseX=e.pageX
+    mouseY=e.pageY
     })
 
 window.addEventListener('keyup',function(e){
@@ -365,13 +367,19 @@ button.addEventListener('click',function(e){
 })
 
 window.addEventListener('click',function(){
-    if(mouseX>canvas.width-200){
+    if(mouseX>canvas.width-canvas.width/8){
         mode++
         mode=1+(mode%3)
         swooshAudio.play()
     }
 })
 
+window.addEventListener('resize',resizeCanvas())
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
 
 
 gameLoop();
